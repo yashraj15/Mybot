@@ -27,29 +27,25 @@ namespace Mybot
             rand = new Random();
             texts = new string[]
             {
-                "Go suck a dick",
+                "hello",
                 "Get a life",
-                "fegit",
+                "How you doin'?",
                 "I did not create a bot for this",
-                "Pornhub.com",
-                ".."
-
-
-            };
+               
+             };
             images = new string[]
             {
 
                "images\\m.jpg",
                "images\\n.jpg",
                "images\\o.jpg",
-               ".."
+               
             };
             reply = new string[]
             {
                 "You cant win against me, peasant!",
                 "You dare to challenge me, puny mortal?!", 
                 "Robots shall rule the planet!",
-                "Just kys already.",
                 "You're adopted.",
                 ".."
 
@@ -60,8 +56,7 @@ namespace Mybot
                 "Return to your hideyhole partdner",
                 "Told you so",
                 "Hahahahahahahha",
-                "You're a disgrace to your mom,family,this planet. Waste of atoms. So disgusting that your own mother exchanged you at the time of your birth. yes, you're adopted",
-                ".."
+               
             };
             lose = new string[]
             {
@@ -197,7 +192,7 @@ namespace Mybot
             commands.CreateCommand("shurg")
                .Do(async (e) =>
                {
-                   await e.Channel.SendMessage("¯\\_(ツ)/¯");
+                   await e.Channel.SendMessage("¯\\_(ツ)//¯");
                });
               commands.CreateCommand("summon")
                   .Parameter("input",ParameterType.Required)
@@ -216,12 +211,7 @@ namespace Mybot
                     await e.Channel.SendMessage("no mi amor");
                 });
 
-            commands.CreateCommand("fuck off")
-               .Do(async (e) =>
-               {
-                   await e.Channel.SendMessage("thats more action than you'll ever get");
-               });
-
+           
             commands.CreateCommand("how are you?")
                .Do(async (e) =>
                {
@@ -289,7 +279,7 @@ namespace Mybot
 
         private void Registerimage()
         {
-            commands.CreateCommand("kms")
+            commands.CreateCommand("no")
                 .Do(async (e) =>
                 {
                     int random = rand.Next(images.Length);
