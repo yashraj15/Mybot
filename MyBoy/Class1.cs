@@ -179,21 +179,7 @@ namespace Mybot
                     string post = texts[random];
                     await e.Channel.SendMessage(post);
                 });
-            commands.CreateCommand("lenny")
-                .Do(async (e) =>
-                {
-                    await e.Channel.SendMessage("( ͡° ͜ʖ ͡°)");
-                });
-            commands.CreateCommand("shrug")
-               .Do(async (e) =>
-               {
-                   await e.Channel.SendMessage("¯\\_(ツ)_/¯");
-               });
-            commands.CreateCommand("shurg")
-               .Do(async (e) =>
-               {
-                   await e.Channel.SendMessage("¯\\_(ツ)//¯");
-               });
+           
               commands.CreateCommand("summon")
                   .Parameter("input",ParameterType.Required)
                   .Do(async (e) =>
